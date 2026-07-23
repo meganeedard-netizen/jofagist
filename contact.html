@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contactez JOFAGIST pour votre projet de tuyauterie industrielle ou de salle de bains. Devis gratuit, réponse sous 48h. Centre-Val-de-Loire et toute la France.">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Contact & Devis Gratuit | JOFAGIST">
+  <title>Contact &amp; Devis Gratuit | JOFAGIST : Expert en tuyauterie industrielle &amp; salles de bains</title>
+  <link rel="icon" type="image/webp" href="assets/images/logo-jofagist.webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+  <header class="site-header" id="site-header">
+    <nav class="nav-container">
+      <a href="index.html" class="nav-logo" aria-label="Accueil JOFAGIST">
+        <img src="assets/images/logo-jofagist.webp" alt="Logo JOFAGIST" width="150" height="48" loading="eager">
+      </a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-menu" id="nav-menu">
+        <ul class="nav-list">
+          <li class="nav-item has-dropdown">
+            <a href="#" class="nav-link">Votre Projet
+              <svg class="nav-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd"/></svg>
+            </a>
+            <div class="dropdown">
+              <a href="tuyauterie-industrielle.html"><span class="dd-icon"><i class="fas fa-industry" aria-hidden="true"></i></span><span>Je suis un professionnel<small>Tuyauterie industrielle en atelier</small></span></a>
+              <a href="salle-de-bain.html"><span class="dd-icon"><i class="fas fa-bath" aria-hidden="true"></i></span><span>Je suis un particulier<small>Salles de bains clés en main</small></span></a>
+            </div>
+          </li>
+          <li class="nav-item"><a href="qui-sommes-nous.html" class="nav-link">Qui sommes-nous</a></li>
+          <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link nav-cta active">Nous contacter</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero hero-small">
+      <div class="hero-bg" style="background-image: url('assets/images/tuyauterie-industrielle-jordan.webp');" role="img" aria-label="Technicien JOFAGIST, contactez-nous"></div>
+      <span class="hero-photo-credit">©JOFAGIST</span>
+      <div class="container">
+        <div class="hero-content">
+          <nav class="breadcrumb" aria-label="Fil d'Ariane">
+            <a href="index.html">Accueil</a>
+            <i class="fas fa-chevron-right" aria-hidden="true"></i>
+            <span>Contact</span>
+          </nav>
+          <span class="hero-tag">Devis gratuit sous 48h</span>
+          <h1>Parlons de <span>Votre Projet</span></h1>
+          <p class="hero-subtitle">Décrivez-nous votre besoin et nous vous recontactons rapidement avec une réponse adaptée.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FORM + INFOS -->
+    <section class="section">
+      <div class="container">
+        <div class="contact-wrap">
+
+          <!-- FORMULAIRE -->
+          <div data-reveal>
+            <h2 style="margin-bottom:8px;">Envoyez-nous votre message</h2>
+            <p style="margin-bottom:32px;">Remplissez le formulaire ci-dessous. Nous accusons réception sous 24h et vous proposons un rendez-vous pour approfondir votre projet.</p>
+
+            <form id="contact-form" action="https://formspree.io/f/VOTRE_ID_FORMSPREE" method="POST" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="prenom">Prénom <span style="color:red;">*</span></label>
+                  <input class="form-control" type="text" id="prenom" name="prenom" placeholder="Votre prénom" required autocomplete="given-name">
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="nom">Nom <span style="color:red;">*</span></label>
+                  <input class="form-control" type="text" id="nom" name="nom" placeholder="Votre nom" required autocomplete="family-name">
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="email">Email <span style="color:red;">*</span></label>
+                  <input class="form-control" type="email" id="email" name="email" placeholder="votre@email.fr" required autocomplete="email">
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="telephone">Téléphone <span style="color:red;">*</span></label>
+                  <input class="form-control" type="tel" id="telephone" name="telephone" placeholder="06 XX XX XX XX" required autocomplete="tel">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="sujet">Votre projet <span style="color:red;">*</span></label>
+                <select class="form-control" id="sujet" name="sujet" required>
+                  <option value="" disabled selected>Sélectionnez votre besoin</option>
+                  <option value="tuyauterie">Préfabrication Tuyauterie Industrielle</option>
+                  <option value="salle-de-bain">Création Salle de Bains Clés en Main</option>
+                  <option value="autre">Autre demande</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="entreprise">Société / Organisation</label>
+                <input class="form-control" type="text" id="entreprise" name="entreprise" placeholder="Nom de votre entreprise (optionnel)" autocomplete="organization">
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="message">Décrivez votre projet <span style="color:red;">*</span></label>
+                <textarea class="form-control" id="message" name="message" rows="6" placeholder="Décrivez votre projet, les travaux envisagés, votre localisation, vos délais souhaités..." required></textarea>
+              </div>
+              <div class="form-group" style="display:flex;align-items:flex-start;gap:10px;">
+                <input type="checkbox" id="rgpd" name="rgpd" required style="margin-top:4px;flex-shrink:0;width:16px;height:16px;cursor:pointer;">
+                <label for="rgpd" style="font-size:0.85rem;color:var(--body);cursor:pointer;">J'accepte que JOFAGIST traite mes données personnelles dans le cadre de ma demande de devis. Voir notre <a href="politique-confidentialite.html" style="color:var(--blue);text-decoration:underline;">politique de confidentialité</a>.</label>
+              </div>
+              <div class="form-submit">
+                <button type="submit" class="btn btn-primary btn-lg" style="width:100%;justify-content:center;">
+                  <i class="fas fa-paper-plane" aria-hidden="true"></i> Envoyer ma demande
+                </button>
+              </div>
+              <div id="form-success" class="form-success" role="alert">
+                <i class="fas fa-check-circle" aria-hidden="true"></i> Votre message a bien été envoyé ! Nous vous recontacterons dans les 48 heures.
+              </div>
+            </form>
+          </div>
+
+          <!-- INFOS CONTACT -->
+          <div data-reveal>
+            <h2 style="margin-bottom:8px;">Nos coordonnées</h2>
+            <p style="margin-bottom:32px;">Vous préférez nous appeler ou nous écrire directement ? Voici toutes nos coordonnées.</p>
+
+            <div class="contact-info">
+              <div class="info-card">
+                <div class="info-icon"><i class="fas fa-phone" aria-hidden="true"></i></div>
+                <div class="info-text">
+                  <strong>Téléphone</strong>
+                  <span>07 61 45 40 19<br>02 38 07 77 21<br>Lun–Ven : 8h–18h</span>
+                </div>
+              </div>
+              <div class="info-card">
+                <div class="info-icon"><i class="fas fa-envelope" aria-hidden="true"></i></div>
+                <div class="info-text">
+                  <strong>Email</strong>
+                  <span>fanny@jofagist.fr<br>Réponse sous 48h</span>
+                </div>
+              </div>
+              <div class="info-card">
+                <div class="info-icon"><i class="fas fa-map-marker-alt" aria-hidden="true"></i></div>
+                <div class="info-text">
+                  <strong>Localisation</strong>
+                  <span>2 Lieu-Dit La Renaissance<br>45220 Saint-Firmin-des-Bois<br>Interventions France entière</span>
+                </div>
+              </div>
+              <div class="info-card">
+                <div class="info-icon"><i class="fas fa-clock" aria-hidden="true"></i></div>
+                <div class="info-text">
+                  <strong>Horaires</strong>
+                  <span>Lundi au Vendredi<br>8h00 – 18h00</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section section--light">
+      <div class="container">
+        <div class="section-header text-center" data-reveal>
+          <span class="section-tag">FAQ</span>
+          <h2>Questions fréquentes</h2>
+        </div>
+        <div style="max-width:780px;margin:0 auto;display:flex;flex-direction:column;gap:18px;" data-reveal>
+          <details style="background:var(--white);border:1px solid var(--border);border-radius:var(--radius);padding:22px 26px;cursor:pointer;">
+            <summary style="font-family:'Poppins',sans-serif;font-weight:600;font-size:1rem;color:var(--text);list-style:none;display:flex;justify-content:space-between;align-items:center;">
+              Dans quel délai recevrai-je un devis ?
+              <i class="fas fa-chevron-down" style="color:var(--blue);font-size:0.85rem;" aria-hidden="true"></i>
+            </summary>
+            <p style="margin-top:14px;margin-bottom:0;font-size:0.95rem;">Nous nous engageons à vous répondre dans les 48 heures ouvrées suivant votre demande. Pour les projets complexes (tuyauterie industrielle avec plans techniques), un délai supplémentaire peut être nécessaire pour vous proposer un chiffrage précis.</p>
+          </details>
+          <details style="background:var(--white);border:1px solid var(--border);border-radius:var(--radius);padding:22px 26px;cursor:pointer;">
+            <summary style="font-family:'Poppins',sans-serif;font-weight:600;font-size:1rem;color:var(--text);list-style:none;display:flex;justify-content:space-between;align-items:center;">
+              Le déplacement pour le devis est-il gratuit ?
+              <i class="fas fa-chevron-down" style="color:var(--blue);font-size:0.85rem;" aria-hidden="true"></i>
+            </summary>
+            <p style="margin-top:14px;margin-bottom:0;font-size:0.95rem;">Oui, le déplacement pour établir un devis est entièrement gratuit et sans engagement dans notre zone d'intervention principale (Centre-Val-de-Loire). Pour les projets industriels en dehors de la région, nous étudions chaque demande au cas par cas.</p>
+          </details>
+          <details style="background:var(--white);border:1px solid var(--border);border-radius:var(--radius);padding:22px 26px;cursor:pointer;">
+            <summary style="font-family:'Poppins',sans-serif;font-weight:600;font-size:1rem;color:var(--text);list-style:none;display:flex;justify-content:space-between;align-items:center;">
+              Intervenez-vous partout en France ?
+              <i class="fas fa-chevron-down" style="color:var(--blue);font-size:0.85rem;" aria-hidden="true"></i>
+            </summary>
+            <p style="margin-top:14px;margin-bottom:0;font-size:0.95rem;">Pour la préfabrication de tuyauterie industrielle : oui, nous livrons partout en France métropolitaine et en Outre-mer. Pour les salles de bains et les travaux sur site : nos équipes interviennent principalement en Centre-Val-de-Loire et dans les régions limitrophes.</p>
+          </details>
+          <details style="background:var(--white);border:1px solid var(--border);border-radius:var(--radius);padding:22px 26px;cursor:pointer;">
+            <summary style="font-family:'Poppins',sans-serif;font-weight:600;font-size:1rem;color:var(--text);list-style:none;display:flex;justify-content:space-between;align-items:center;">
+              Quels documents fournir pour un devis tuyauterie industrielle ?
+              <i class="fas fa-chevron-down" style="color:var(--blue);font-size:0.85rem;" aria-hidden="true"></i>
+            </summary>
+            <p style="margin-top:14px;margin-bottom:0;font-size:0.95rem;">Pour un chiffrage précis, nous avons besoin des plans isométriques (ou plans d'ensemble avec cotation), du cahier des charges technique (matériaux, classes de pression, normes applicables) et si possible de la liste des matériaux. Sans ces documents, nous pouvons réaliser une estimation budgétaire basée sur des données préliminaires.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="assets/images/logo-jofagist.webp" alt="JOFAGIST" class="footer-logo" width="150" height="48" loading="lazy">
+          <p>Expert en préfabrication de tuyauterie industrielle et création de salles de bains clés en main. Basé en Centre-Val-de-Loire.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="qui-sommes-nous.html">Qui sommes-nous</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Nos Métiers</h4>
+          <ul class="footer-links">
+            <li><a href="tuyauterie-industrielle.html">Préfabrication Tuyauterie</a></li>
+            <li><a href="salle-de-bain.html">Création Salles de Bains</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <div class="footer-contact-item"><i class="fas fa-map-marker-alt" aria-hidden="true"></i><span>2 Lieu-Dit La Renaissance<br>45220 Saint-Firmin-des-Bois</span></div>
+          <div class="footer-contact-item"><i class="fas fa-phone" aria-hidden="true"></i><span>07 61 45 40 19 / 02 38 07 77 21</span></div>
+          <div class="footer-contact-item"><i class="fas fa-envelope" aria-hidden="true"></i><span>fanny@jofagist.fr</span></div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-copy">
+          <span>© 2026 JOFAGIST. Tous droits réservés.</span>
+          <span class="footer-credit">Site créé par <a href="https://kudjastudio.fr/" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline;">Kudja Studio</a></span>
+        </div>
+        <div class="footer-bottom-links">
+          <a href="mentions-legales.html">Mentions légales</a>
+          <a href="politique-confidentialite.html">Politique de confidentialité</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- WhatsApp flottant -->
+  <a href="https://wa.me/33761454019?text=Bonjour%2C%20je%20souhaite%20obtenir%20un%20devis%20JOFAGIST%20!" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Contacter JOFAGIST sur WhatsApp">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.125.557 4.126 1.534 5.862L.057 23.985l6.278-1.447A11.934 11.934 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.894a9.875 9.875 0 0 1-5.031-1.376l-.361-.214-3.727.857.892-3.617-.235-.372A9.872 9.872 0 0 1 2.106 12C2.106 6.533 6.533 2.106 12 2.106c5.467 0 9.894 4.427 9.894 9.894 0 5.467-4.427 9.894-9.894 9.894z"/></svg>
+  </a>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
