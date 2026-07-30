@@ -1432,7 +1432,6 @@ select.form-control { appearance: none; background-image: url("data:image/svg+xm
 
   .nav-item.has-dropdown.open .dropdown { display: block; }
   .nav-item.has-dropdown.open .nav-arrow { transform: rotate(180deg); }
-  .nav-item.has-dropdown:hover .dropdown { opacity: 0; visibility: hidden; }
 
   .nav-cta {
     margin-top: 12px;
