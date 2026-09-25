@@ -1,0 +1,6 @@
+RewriteEngine On
+
+# Redirige jofagist.fr et http:// vers https://www.jofagist.fr (une seule adresse pour Google)
+RewriteCond %{HTTP_HOST} !^www\.jofagist\.fr$ [NC,OR]
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://www.jofagist.fr/$1 [R=301,L]
