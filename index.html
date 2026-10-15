@@ -19,26 +19,113 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
   <link rel="stylesheet" href="assets/css/styles.css">
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "JOFAGIST",
-    "description": "Expert en préfabrication de tuyauterie industrielle et création de salles de bains clés en main.",
-    "url": "https://www.jofagist.fr",
-    "logo": "assets/images/logo-jofagist.webp",
-    "image": "assets/images/tuyauterie-industrielle-montee.webp",
-    "telephone": "0761454019",
-    "email": "fanny@jofagist.fr",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "2 Lieu-Dit La Renaissance", "addressLocality": "Saint-Firmin-des-Bois", "postalCode": "45220", "addressRegion": "Centre-Val-de-Loire",
-      "addressCountry": "FR"
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": [
+        "LocalBusiness",
+        "Plumber",
+        "GeneralContractor"
+      ],
+      "@id": "https://www.jofagist.fr/#entreprise",
+      "name": "JOFAGIST",
+      "legalName": "SARL JOFAGIST",
+      "description": "JOFAGIST est une entreprise du Loiret (Saint-Firmin-des-Bois, près de Montargis) à deux métiers : la préfabrication en atelier de tuyauterie industrielle, de plomberie industrielle et de supportage pour les professionnels (livraison partout en France), et la création de salles de bains clés en main et la plomberie pour les particuliers à Montargis, dans le Montargois, le Loiret, l'Yonne et le sud de la Seine-et-Marne.",
+      "url": "https://www.jofagist.fr/",
+      "logo": "https://www.jofagist.fr/assets/images/logo-jofagist.webp",
+      "image": "https://www.jofagist.fr/assets/images/tuyauterie-industrielle-montee.webp",
+      "telephone": "+33761454019",
+      "email": "fanny@jofagist.fr",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "2 Lieu-Dit La Renaissance",
+        "addressLocality": "Saint-Firmin-des-Bois",
+        "postalCode": "45220",
+        "addressRegion": "Centre-Val-de-Loire",
+        "addressCountry": "FR"
+      },
+      "areaServed": [
+        "Montargis",
+        "Amilly",
+        "Château-Renard",
+        "Souppes-sur-Loing",
+        "Courtenay",
+        "Ferrières-en-Gâtinais",
+        "Égreville",
+        "Dordives",
+        "Loiret",
+        "Yonne",
+        "Sud de la Seine-et-Marne",
+        "Centre-Val-de-Loire",
+        "France"
+      ],
+      "priceRange": "€€",
+      "openingHours": "Mo-Fr 08:00-18:00",
+      "founder": [
+        {
+          "@type": "Person",
+          "name": "Jordan Peguilhan"
+        },
+        {
+          "@type": "Person",
+          "name": "Fanny Prieto-Blanco"
+        }
+      ],
+      "knowsAbout": [
+        "Préfabrication de tuyauterie industrielle",
+        "Plomberie industrielle",
+        "Supportage",
+        "Soudure",
+        "CVC",
+        "Chaufferie",
+        "Rénovation de salle de bains",
+        "Salle de bains clés en main",
+        "Douche à l'italienne",
+        "Plomberie",
+        "Dépannage plomberie",
+        "Chauffe-eau"
+      ],
+      "sameAs": [
+        "https://www.linkedin.com/company/jofagist/",
+        "https://www.facebook.com/p/JOFAGIST-Plomberie-Soudure-Tuyauterie-61577615434324/"
+      ],
+      "makesOffer": [
+        {
+          "@type": "Offer",
+          "name": "Préfabrication de tuyauterie industrielle et supportage",
+          "description": "Fabrication en atelier à partir de plans et maquettes 3D (Revit), acier, inox, cuivre, PVC, livraison partout en France."
+        },
+        {
+          "@type": "Offer",
+          "name": "Salle de bains clés en main",
+          "description": "Rénovation complète, tous corps de métier, de 3 jours à 2 semaines de travaux.",
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "minPrice": 2000,
+            "maxPrice": 8500,
+            "priceCurrency": "EUR"
+          }
+        },
+        {
+          "@type": "Offer",
+          "name": "Plomberie et dépannage pour particuliers",
+          "description": "Dépannage, chauffe-eau, installation et rénovation de réseaux."
+        }
+      ]
     },
-    "areaServed": ["Centre-Val-de-Loire", "France"],
-    "priceRange": "€€",
-    "openingHours": "Mo-Fr 08:00-18:00",
-    "sameAs": []
-  }
+    {
+      "@type": "WebSite",
+      "@id": "https://www.jofagist.fr/#site",
+      "url": "https://www.jofagist.fr/",
+      "name": "JOFAGIST",
+      "inLanguage": "fr-FR",
+      "publisher": {
+        "@id": "https://www.jofagist.fr/#entreprise"
+      }
+    }
+  ]
+}
   </script>
 </head>
 <body>
@@ -259,5 +346,6 @@
   </a>
 
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/consent.js"></script>
 </body>
 </html>

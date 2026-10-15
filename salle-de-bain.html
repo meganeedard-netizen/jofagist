@@ -16,25 +16,171 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
   <link rel="stylesheet" href="assets/css/styles.css">
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "JOFAGIST",
-    "description": "Création et rénovation de salles de bains clés en main, plomberie générale, à Montargis et dans le Montargois, le Loiret, l'Yonne et le sud de la Seine-et-Marne.",
-    "url": "https://www.jofagist.fr/salle-de-bain.html",
-    "logo": "assets/images/logo-jofagist.webp",
-    "image": "assets/images/sdb1-apres.webp",
-    "telephone": "0761454019",
-    "email": "fanny@jofagist.fr",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "2 Lieu-Dit La Renaissance", "addressLocality": "Saint-Firmin-des-Bois", "postalCode": "45220", "addressRegion": "Centre-Val-de-Loire",
-      "addressCountry": "FR"
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": [
+        "LocalBusiness",
+        "Plumber",
+        "GeneralContractor"
+      ],
+      "@id": "https://www.jofagist.fr/#entreprise",
+      "name": "JOFAGIST",
+      "legalName": "SARL JOFAGIST",
+      "description": "JOFAGIST est une entreprise du Loiret (Saint-Firmin-des-Bois, près de Montargis) à deux métiers : la préfabrication en atelier de tuyauterie industrielle, de plomberie industrielle et de supportage pour les professionnels (livraison partout en France), et la création de salles de bains clés en main et la plomberie pour les particuliers à Montargis, dans le Montargois, le Loiret, l'Yonne et le sud de la Seine-et-Marne.",
+      "url": "https://www.jofagist.fr/",
+      "logo": "https://www.jofagist.fr/assets/images/logo-jofagist.webp",
+      "image": "https://www.jofagist.fr/assets/images/tuyauterie-industrielle-montee.webp",
+      "telephone": "+33761454019",
+      "email": "fanny@jofagist.fr",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "2 Lieu-Dit La Renaissance",
+        "addressLocality": "Saint-Firmin-des-Bois",
+        "postalCode": "45220",
+        "addressRegion": "Centre-Val-de-Loire",
+        "addressCountry": "FR"
+      },
+      "areaServed": [
+        "Montargis",
+        "Amilly",
+        "Château-Renard",
+        "Souppes-sur-Loing",
+        "Courtenay",
+        "Ferrières-en-Gâtinais",
+        "Égreville",
+        "Dordives",
+        "Loiret",
+        "Yonne",
+        "Sud de la Seine-et-Marne",
+        "Centre-Val-de-Loire",
+        "France"
+      ],
+      "priceRange": "€€",
+      "openingHours": "Mo-Fr 08:00-18:00",
+      "founder": [
+        {
+          "@type": "Person",
+          "name": "Jordan Peguilhan"
+        },
+        {
+          "@type": "Person",
+          "name": "Fanny Prieto-Blanco"
+        }
+      ],
+      "knowsAbout": [
+        "Préfabrication de tuyauterie industrielle",
+        "Plomberie industrielle",
+        "Supportage",
+        "Soudure",
+        "CVC",
+        "Chaufferie",
+        "Rénovation de salle de bains",
+        "Salle de bains clés en main",
+        "Douche à l'italienne",
+        "Plomberie",
+        "Dépannage plomberie",
+        "Chauffe-eau"
+      ],
+      "sameAs": [
+        "https://www.linkedin.com/company/jofagist/",
+        "https://www.facebook.com/p/JOFAGIST-Plomberie-Soudure-Tuyauterie-61577615434324/"
+      ],
+      "makesOffer": [
+        {
+          "@type": "Offer",
+          "name": "Préfabrication de tuyauterie industrielle et supportage",
+          "description": "Fabrication en atelier à partir de plans et maquettes 3D (Revit), acier, inox, cuivre, PVC, livraison partout en France."
+        },
+        {
+          "@type": "Offer",
+          "name": "Salle de bains clés en main",
+          "description": "Rénovation complète, tous corps de métier, de 3 jours à 2 semaines de travaux.",
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "minPrice": 2000,
+            "maxPrice": 8500,
+            "priceCurrency": "EUR"
+          }
+        },
+        {
+          "@type": "Offer",
+          "name": "Plomberie et dépannage pour particuliers",
+          "description": "Dépannage, chauffe-eau, installation et rénovation de réseaux."
+        }
+      ]
     },
-    "areaServed": ["Montargis", "Montargois", "Amilly", "Château-Renard", "Souppes-sur-Loing", "Courtenay", "Ferrières-en-Gâtinais", "Égreville", "Dordives", "Loiret", "Yonne", "Sud Seine-et-Marne"],
-    "priceRange": "€€",
-    "openingHours": "Mo-Fr 08:00-18:00"
-  }
+    {
+      "@type": "Service",
+      "name": "Création de salles de bains clés en main",
+      "serviceType": "Rénovation de salle de bains",
+      "provider": {
+        "@id": "https://www.jofagist.fr/#entreprise"
+      },
+      "areaServed": [
+        "Montargis",
+        "Amilly",
+        "Château-Renard",
+        "Souppes-sur-Loing",
+        "Courtenay",
+        "Ferrières-en-Gâtinais",
+        "Égreville",
+        "Dordives",
+        "Loiret",
+        "Yonne",
+        "Sud de la Seine-et-Marne"
+      ],
+      "url": "https://www.jofagist.fr/salle-de-bain.html",
+      "offers": {
+        "@type": "Offer",
+        "priceSpecification": {
+          "@type": "PriceSpecification",
+          "minPrice": 2000,
+          "maxPrice": 8500,
+          "priceCurrency": "EUR"
+        }
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Combien coûte une salle de bains clés en main à Montargis et dans le Montargois ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Nos dernières réalisations, visibles plus haut sur cette page, vont de 2 000 € (3 jours de travaux) à 8 500 € (2 semaines). La plupart des rénovations complètes se situent entre 4 000 € et 8 500 €, tout compris : dépose, plomberie, électricité, carrelage, équipements et finitions. Le devis est gratuit, détaillé par poste, et le prix convenu est celui que vous payez."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Combien de temps durent les travaux d'une salle de bains ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Selon l'ampleur du projet, comptez de 3 jours à 2 semaines de chantier. Une date de fin claire est fixée dès le devis et respectée grâce à une planification rigoureuse."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Dans quelles communes intervenez-vous ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "À Montargis et dans tout le Montargois (Amilly, Château-Renard, Ferrières-en-Gâtinais, Dordives…), dans le Loiret, l'Yonne (Courtenay) et le sud de la Seine-et-Marne (Souppes-sur-Loing, Égreville). Le déplacement pour le devis est gratuit."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Faut-il faire appel à plusieurs artisans pour refaire sa salle de bains ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Non. JOFAGIST coordonne tous les corps de métier (plomberie, électricité, carrelage, menuiserie) : un seul interlocuteur, un seul devis, une seule date de livraison. Les travaux respectent les normes DTU 60.1 (plomberie) et NF C 15-100 (électricité)."
+          }
+        }
+      ]
+    }
+  ]
+}
   </script>
 </head>
 <body>
@@ -567,6 +713,46 @@
       </div>
     </section>
 
+    <!-- FAQ -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header text-center" data-reveal>
+          <span class="section-tag">FAQ</span>
+          <h2>Questions fréquentes</h2>
+        </div>
+        <div style="max-width:780px;margin:0 auto;display:flex;flex-direction:column;gap:18px;" data-reveal>
+          <details style="background:var(--white);border:1px solid var(--border);border-radius:var(--radius);padding:22px 26px;cursor:pointer;">
+            <summary style="font-family:'Poppins',sans-serif;font-weight:600;font-size:1rem;color:var(--text);list-style:none;display:flex;justify-content:space-between;align-items:center;gap:14px;">
+              Combien coûte une salle de bains clés en main à Montargis et dans le Montargois ?
+              <i class="fas fa-chevron-down" style="color:var(--blue);font-size:0.85rem;" aria-hidden="true"></i>
+            </summary>
+            <p style="margin-top:14px;margin-bottom:0;font-size:0.95rem;">Nos dernières réalisations, visibles plus haut sur cette page, vont de 2&nbsp;000&nbsp;€ (3 jours de travaux) à 8&nbsp;500&nbsp;€ (2 semaines). La plupart des rénovations complètes se situent entre 4&nbsp;000&nbsp;€ et 8&nbsp;500&nbsp;€, tout compris : dépose, plomberie, électricité, carrelage, équipements et finitions. Le devis est gratuit, détaillé par poste, et le prix convenu est celui que vous payez.</p>
+          </details>
+          <details style="background:var(--white);border:1px solid var(--border);border-radius:var(--radius);padding:22px 26px;cursor:pointer;">
+            <summary style="font-family:'Poppins',sans-serif;font-weight:600;font-size:1rem;color:var(--text);list-style:none;display:flex;justify-content:space-between;align-items:center;gap:14px;">
+              Combien de temps durent les travaux d'une salle de bains ?
+              <i class="fas fa-chevron-down" style="color:var(--blue);font-size:0.85rem;" aria-hidden="true"></i>
+            </summary>
+            <p style="margin-top:14px;margin-bottom:0;font-size:0.95rem;">Selon l'ampleur du projet, comptez de 3 jours à 2 semaines de chantier. Une date de fin claire est fixée dès le devis et respectée grâce à une planification rigoureuse.</p>
+          </details>
+          <details style="background:var(--white);border:1px solid var(--border);border-radius:var(--radius);padding:22px 26px;cursor:pointer;">
+            <summary style="font-family:'Poppins',sans-serif;font-weight:600;font-size:1rem;color:var(--text);list-style:none;display:flex;justify-content:space-between;align-items:center;gap:14px;">
+              Dans quelles communes intervenez-vous ?
+              <i class="fas fa-chevron-down" style="color:var(--blue);font-size:0.85rem;" aria-hidden="true"></i>
+            </summary>
+            <p style="margin-top:14px;margin-bottom:0;font-size:0.95rem;">À Montargis et dans tout le Montargois (Amilly, Château-Renard, Ferrières-en-Gâtinais, Dordives…), dans le Loiret, l'Yonne (Courtenay) et le sud de la Seine-et-Marne (Souppes-sur-Loing, Égreville). Le déplacement pour le devis est gratuit.</p>
+          </details>
+          <details style="background:var(--white);border:1px solid var(--border);border-radius:var(--radius);padding:22px 26px;cursor:pointer;">
+            <summary style="font-family:'Poppins',sans-serif;font-weight:600;font-size:1rem;color:var(--text);list-style:none;display:flex;justify-content:space-between;align-items:center;gap:14px;">
+              Faut-il faire appel à plusieurs artisans pour refaire sa salle de bains ?
+              <i class="fas fa-chevron-down" style="color:var(--blue);font-size:0.85rem;" aria-hidden="true"></i>
+            </summary>
+            <p style="margin-top:14px;margin-bottom:0;font-size:0.95rem;">Non. JOFAGIST coordonne tous les corps de métier (plomberie, électricité, carrelage, menuiserie) : un seul interlocuteur, un seul devis, une seule date de livraison. Les travaux respectent les normes DTU 60.1 (plomberie) et NF C 15-100 (électricité).</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
     <!-- CTA -->
     <section class="cta-section">
       <div class="container">
@@ -632,5 +818,6 @@
   </a>
 
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/consent.js"></script>
 </body>
 </html>

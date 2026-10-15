@@ -17,25 +17,153 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
   <link rel="stylesheet" href="assets/css/styles.css">
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "JOFAGIST",
-    "description": "Entreprise de tuyauterie industrielle, spécialisée dans la préfabrication de tuyauterie, plomberie industrielle et supportage. Sous-traitant en préfabrication pour PME industrielles, grands groupes et bureaux d'études.",
-    "url": "https://www.jofagist.fr/tuyauterie-industrielle.html",
-    "logo": "assets/images/logo-jofagist.webp",
-    "image": "assets/images/tuyauterie-industrielle-montee.webp",
-    "telephone": "0761454019",
-    "email": "fanny@jofagist.fr",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "2 Lieu-Dit La Renaissance", "addressLocality": "Saint-Firmin-des-Bois", "postalCode": "45220", "addressRegion": "Centre-Val-de-Loire",
-      "addressCountry": "FR"
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": [
+        "LocalBusiness",
+        "Plumber",
+        "GeneralContractor"
+      ],
+      "@id": "https://www.jofagist.fr/#entreprise",
+      "name": "JOFAGIST",
+      "legalName": "SARL JOFAGIST",
+      "description": "JOFAGIST est une entreprise du Loiret (Saint-Firmin-des-Bois, près de Montargis) à deux métiers : la préfabrication en atelier de tuyauterie industrielle, de plomberie industrielle et de supportage pour les professionnels (livraison partout en France), et la création de salles de bains clés en main et la plomberie pour les particuliers à Montargis, dans le Montargois, le Loiret, l'Yonne et le sud de la Seine-et-Marne.",
+      "url": "https://www.jofagist.fr/",
+      "logo": "https://www.jofagist.fr/assets/images/logo-jofagist.webp",
+      "image": "https://www.jofagist.fr/assets/images/tuyauterie-industrielle-montee.webp",
+      "telephone": "+33761454019",
+      "email": "fanny@jofagist.fr",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "2 Lieu-Dit La Renaissance",
+        "addressLocality": "Saint-Firmin-des-Bois",
+        "postalCode": "45220",
+        "addressRegion": "Centre-Val-de-Loire",
+        "addressCountry": "FR"
+      },
+      "areaServed": [
+        "Montargis",
+        "Amilly",
+        "Château-Renard",
+        "Souppes-sur-Loing",
+        "Courtenay",
+        "Ferrières-en-Gâtinais",
+        "Égreville",
+        "Dordives",
+        "Loiret",
+        "Yonne",
+        "Sud de la Seine-et-Marne",
+        "Centre-Val-de-Loire",
+        "France"
+      ],
+      "priceRange": "€€",
+      "openingHours": "Mo-Fr 08:00-18:00",
+      "founder": [
+        {
+          "@type": "Person",
+          "name": "Jordan Peguilhan"
+        },
+        {
+          "@type": "Person",
+          "name": "Fanny Prieto-Blanco"
+        }
+      ],
+      "knowsAbout": [
+        "Préfabrication de tuyauterie industrielle",
+        "Plomberie industrielle",
+        "Supportage",
+        "Soudure",
+        "CVC",
+        "Chaufferie",
+        "Rénovation de salle de bains",
+        "Salle de bains clés en main",
+        "Douche à l'italienne",
+        "Plomberie",
+        "Dépannage plomberie",
+        "Chauffe-eau"
+      ],
+      "sameAs": [
+        "https://www.linkedin.com/company/jofagist/",
+        "https://www.facebook.com/p/JOFAGIST-Plomberie-Soudure-Tuyauterie-61577615434324/"
+      ],
+      "makesOffer": [
+        {
+          "@type": "Offer",
+          "name": "Préfabrication de tuyauterie industrielle et supportage",
+          "description": "Fabrication en atelier à partir de plans et maquettes 3D (Revit), acier, inox, cuivre, PVC, livraison partout en France."
+        },
+        {
+          "@type": "Offer",
+          "name": "Salle de bains clés en main",
+          "description": "Rénovation complète, tous corps de métier, de 3 jours à 2 semaines de travaux.",
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "minPrice": 2000,
+            "maxPrice": 8500,
+            "priceCurrency": "EUR"
+          }
+        },
+        {
+          "@type": "Offer",
+          "name": "Plomberie et dépannage pour particuliers",
+          "description": "Dépannage, chauffe-eau, installation et rénovation de réseaux."
+        }
+      ]
     },
-    "areaServed": ["Centre-Val-de-Loire", "France"],
-    "priceRange": "€€",
-    "openingHours": "Mo-Fr 08:00-18:00"
-  }
+    {
+      "@type": "Service",
+      "name": "Préfabrication de tuyauterie industrielle",
+      "serviceType": "Tuyauterie industrielle, plomberie industrielle et supportage",
+      "provider": {
+        "@id": "https://www.jofagist.fr/#entreprise"
+      },
+      "areaServed": [
+        "France",
+        "Outre-mer"
+      ],
+      "url": "https://www.jofagist.fr/tuyauterie-industrielle.html"
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Qu'est-ce que la préfabrication de tuyauterie industrielle ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "C'est la fabrication en atelier des réseaux de tuyauterie et de leur supportage (colliers, potences, berceaux), à partir de vos plans et maquettes 3D, avant leur livraison prêts à poser sur site. Résultat : moins de temps de pose, des plannings fiabilisés et une qualité de soudure maîtrisée."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Pour quels types de projets travaillez-vous ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Projets CVC (hôpitaux, lycées, EHPAD, écoles, usines), chaufferies, sous-stations et salles techniques. JOFAGIST intervient en sous-traitance pour des PME industrielles, grands groupes, bureaux d'études, entreprises générales de tuyauterie et artisans du BTP."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quels matériaux et quels plans utilisez-vous ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Acier, inox, cuivre et PVC. Nous travaillons directement à partir de vos maquettes 3D (Revit) et fournissons des notices de montage 3D. Chaque pièce est tracée : certificats matière, procédures de soudage, enregistrements de contrôle."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Livrez-vous partout en France ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Oui. L'atelier est basé dans le Loiret (Saint-Firmin-des-Bois, Centre-Val-de-Loire) et livre la tuyauterie préfabriquée partout en France métropolitaine et en Outre-mer. Nous assurons aussi l'installation sur site."
+          }
+        }
+      ]
+    }
+  ]
+}
   </script>
 </head>
 <body>
@@ -341,6 +469,46 @@
       </div>
     </section>
 
+    <!-- FAQ -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header text-center" data-reveal>
+          <span class="section-tag">FAQ</span>
+          <h2>Questions fréquentes</h2>
+        </div>
+        <div style="max-width:780px;margin:0 auto;display:flex;flex-direction:column;gap:18px;" data-reveal>
+          <details style="background:var(--white);border:1px solid var(--border);border-radius:var(--radius);padding:22px 26px;cursor:pointer;">
+            <summary style="font-family:'Poppins',sans-serif;font-weight:600;font-size:1rem;color:var(--text);list-style:none;display:flex;justify-content:space-between;align-items:center;gap:14px;">
+              Qu'est-ce que la préfabrication de tuyauterie industrielle ?
+              <i class="fas fa-chevron-down" style="color:var(--blue);font-size:0.85rem;" aria-hidden="true"></i>
+            </summary>
+            <p style="margin-top:14px;margin-bottom:0;font-size:0.95rem;">C'est la fabrication en atelier des réseaux de tuyauterie et de leur supportage (colliers, potences, berceaux), à partir de vos plans et maquettes 3D, avant leur livraison prêts à poser sur site. Résultat : moins de temps de pose, des plannings fiabilisés et une qualité de soudure maîtrisée.</p>
+          </details>
+          <details style="background:var(--white);border:1px solid var(--border);border-radius:var(--radius);padding:22px 26px;cursor:pointer;">
+            <summary style="font-family:'Poppins',sans-serif;font-weight:600;font-size:1rem;color:var(--text);list-style:none;display:flex;justify-content:space-between;align-items:center;gap:14px;">
+              Pour quels types de projets travaillez-vous ?
+              <i class="fas fa-chevron-down" style="color:var(--blue);font-size:0.85rem;" aria-hidden="true"></i>
+            </summary>
+            <p style="margin-top:14px;margin-bottom:0;font-size:0.95rem;">Projets CVC (hôpitaux, lycées, EHPAD, écoles, usines), chaufferies, sous-stations et salles techniques. JOFAGIST intervient en sous-traitance pour des PME industrielles, grands groupes, bureaux d'études, entreprises générales de tuyauterie et artisans du BTP.</p>
+          </details>
+          <details style="background:var(--white);border:1px solid var(--border);border-radius:var(--radius);padding:22px 26px;cursor:pointer;">
+            <summary style="font-family:'Poppins',sans-serif;font-weight:600;font-size:1rem;color:var(--text);list-style:none;display:flex;justify-content:space-between;align-items:center;gap:14px;">
+              Quels matériaux et quels plans utilisez-vous ?
+              <i class="fas fa-chevron-down" style="color:var(--blue);font-size:0.85rem;" aria-hidden="true"></i>
+            </summary>
+            <p style="margin-top:14px;margin-bottom:0;font-size:0.95rem;">Acier, inox, cuivre et PVC. Nous travaillons directement à partir de vos maquettes 3D (Revit) et fournissons des notices de montage 3D. Chaque pièce est tracée : certificats matière, procédures de soudage, enregistrements de contrôle.</p>
+          </details>
+          <details style="background:var(--white);border:1px solid var(--border);border-radius:var(--radius);padding:22px 26px;cursor:pointer;">
+            <summary style="font-family:'Poppins',sans-serif;font-weight:600;font-size:1rem;color:var(--text);list-style:none;display:flex;justify-content:space-between;align-items:center;gap:14px;">
+              Livrez-vous partout en France ?
+              <i class="fas fa-chevron-down" style="color:var(--blue);font-size:0.85rem;" aria-hidden="true"></i>
+            </summary>
+            <p style="margin-top:14px;margin-bottom:0;font-size:0.95rem;">Oui. L'atelier est basé dans le Loiret (Saint-Firmin-des-Bois, Centre-Val-de-Loire) et livre la tuyauterie préfabriquée partout en France métropolitaine et en Outre-mer. Nous assurons aussi l'installation sur site.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
     <!-- CTA -->
     <section class="cta-section">
       <div class="container">
@@ -423,5 +591,6 @@
   </a>
 
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/consent.js"></script>
 </body>
 </html>
